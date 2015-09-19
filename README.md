@@ -2,11 +2,21 @@
 メイドさんエディット画面(level5)においてTCPサーバを起動するUnitiyInjectorプラグインです。ネットワーク経由でコマンドを送信することで、ポーズや表情を変更したり、セリフや効果音を再生できるようにします。  
 This UnitiyInjector plugin invokes a TCP server in maid editing screen (level5). Send any commands via network, she will change her pose and face, speaking, or play sound-effect.  
 
+## 自前でコンパイル
+[neguse11 さまのネットワークインストーラーもどき](https://github.com/neguse11/cm3d2_plugins_okiba)に居候しています。
+`cm3d2_plugins_okiba-master`フォルダの下に`src`ディレクトリを置いて`(ゲームのインストールパス)/cm3d2_plugins_okiba-master/src/compile.bat`を実行してください。 
+
 ## 使い方
+0. 下準備
+  1. `(ゲームのインストールパス)/UnityInjector`以下にCM3D2.RemoteControl.Plugin.dllをコピーします
+  2. Windowsファイヤウォールからプログラムレベルあるいはポートレベルのブロックを解除します
 1. CM3D2を起動してゲームをプレイ開始、メイド管理メニュー→エディットメニューと進んで、メイドさんのエディット画面を開きます
 2. PuTTYなどのTCP/IP接続が可能なクライアントから、ポート9000に接続します
   * PuTTY を使う場合、Raw接続を選択してください。TelnetやSSH接続では、接続時にネゴシエーションのための文字列が送信されて動作しません。
+  * [TCP/IPテストツール](http://www.vector.co.jp/soft/dl/winnt/net/se411272.html)がそのまま使えます。
 3. コマンド文字列を送信します
+  * 改行ごとにコマンドが実行されます
+  * クライアント側からのみ切断できます
 
 ## コマンド仕様
 * `<キー名>=<値>`のペアを1つ以上の空白で区切って列挙します。
@@ -187,3 +197,6 @@ SE=se022.ogg
 * コマンド：カメラの移動、回転、ズームの制御
 * コマンド：効果音再生時のループ指定(要調査)
 * 3Dモデルの関節制御
+
+## いろいろ
+* 原型をとどめていませんが、[TbGUP4660氏のChangeMotion.Plugin](http://seesaawiki.jp/cm3d2/d/%b2%fe%c2%a4#content_7_23)を相当に参考にさせて頂きました。ありがとうございます。
