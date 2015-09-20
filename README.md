@@ -219,3 +219,7 @@ SE=se022.ogg
 * 原型をとどめていませんが、[TbGUP4660氏のChangeMotion.Plugin](http://seesaawiki.jp/cm3d2/d/%b2%fe%c2%a4#content_7_23)を相当に参考にさせて頂きました。ありがとうございます。
 * このプラグインだけで何か明白な有効性があるわけでもなさそうですし、むしろ他のプラグインにTCPサーバ部分を組み込んでもらった方が使い勝手が良いかもしれません。
 * というわけで、再利用はご自由に。むしろ再利用してくれ。
+
+## 連絡先など
+*  [@pirolix twitter](https://twitter.com/pirolix)
+*  [カスタムメイド3D したらば談話室](http://jbbs.shitaraba.net/game/55179/)の改造スレッドをちょくちょく見ています
