@@ -220,6 +220,9 @@ SE=se022.ogg
 * このプラグインだけで何か明白な有効性があるわけでもなさそうですし、むしろ他のプラグインにTCPサーバ部分を組み込んでもらった方が使い勝手が良いかもしれません。
 * というわけで、再利用はご自由に。むしろ再利用してくれ。
 
+## ライセンス
+* [LGPL ](https://ja.wikipedia.org/wiki/GNU_Lesser_General_Public_License)
+
 ## 連絡先など
 *  [@pirolix twitter](https://twitter.com/pirolix)
 *  [カスタムメイド3D したらば談話室](http://jbbs.shitaraba.net/game/55179/)の改造スレッドをちょくちょく見ています
